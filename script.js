@@ -1,4 +1,4 @@
-const frames = Array.from({ length: 16 }, (_, index) => `assets/sprite_${String(index).padStart(2, '0')}.png`);
+const frames = Array.from({ length: 15 }, (_, index) => `assets/sprite_${String(index).padStart(2, '0')}.png`);
 let frame = 0;
 let showHearts = false;
 
