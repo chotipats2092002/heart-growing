@@ -1,0 +1,44 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .app {
+    height: 100vh;
+    width: 100vw;
+    background: url('assets/background.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .flower {
+    width: 60vw; /* ขนาดของภาพ */
+    height: auto; /* รักษาอัตราส่วน */
+    max-width: 600px;
+    position: absolute;
+    top: 50%; /* ตำแหน่ง Y */
+    left: 50%; /* ตำแหน่ง X */
+    transform: translate(-50%, -50%); /* จัดให้อยู่ตรงกลาง */
+  }
+  
+  .heart {
+    position: absolute;
+    top: 0;
+    animation: fall linear forwards;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) scale(0.8);
+      opacity: 0;
+    }
+  }
+  
